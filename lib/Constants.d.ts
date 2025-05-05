@@ -182,6 +182,15 @@ export default interface Constants {
     ROLE_SELECT:        6;
     MENTIONABLE_SELECT: 7;
     CHANNEL_SELECT:     8;
+    SECTION:            9;
+    TEXT_DISPLAY:       10;
+    THUMBNAIL:          11;
+    MEDIA_GALLERY:      12;
+    FILE:               13;
+    // Unknown 15
+    // Unknown 16
+    SEPARATOR:          14;
+    CONTAINER:          17;
   };
   ForumLayoutTypes: {
     NOT_SET:      0;
@@ -258,12 +267,7 @@ export default interface Constants {
     REMOVE_ROLE: 0;
     KICK:        1;
   };
-  GuildIntegrationTypes: [
-    "twitch",
-    "youtube",
-    "discord",
-    "guild_subscription",
-  ];
+  GuildIntegrationTypes: ["twitch", "youtube", "discord", "guild_subscription"];
   GuildNSFWLevels: {
     DEFAULT:        0;
     EXPLICIT:       1;
@@ -300,13 +304,7 @@ export default interface Constants {
     Banner3: "banner3";
     Banner4: "banner4";
   };
-  ImageFormats: [
-    "jpg",
-    "jpeg",
-    "png",
-    "webp",
-    "gif",
-  ];
+  ImageFormats:        ["jpg", "jpeg", "png", "webp", "gif"];
   ImageSizeBoundaries: {
     MAXIMUM: 4096;
     MINIMUM: 16;
@@ -430,6 +428,8 @@ export default interface Constants {
     FAILED_TO_MENTION_SOME_ROLES_IN_THREAD: 256;
     SUPPRESS_NOTIFICATIONS:                 4096;
     IS_VOICE_MESSAGE:                       8192;
+    HAS_SNAPSHOT:                           16384;
+    IS_COMPONENTS_V2:                       32768;
   };
   MessageTypes: {
     DEFAULT:                                      0;
@@ -614,6 +614,10 @@ export default interface Constants {
   ReactionTypes: {
     NORMAL: 0;
     BURST:  1;
+  };
+  SeparatorSpacingSize: {
+    SMALL: 1;
+    LARGE: 2;
   };
   StageInstancePrivacyLevel: {
     PUBLIC:     1;
