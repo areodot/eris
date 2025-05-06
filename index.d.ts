@@ -2092,7 +2092,7 @@ declare namespace Eris {
   interface AdvancedMessageContentEdit {
     allowedMentions?: AllowedMentions;
     attachments?: PartialAttachment[];
-    components?: ActionRow[];
+    components?: Component[];
     content?: string;
     /** @deprecated */
     embed?: EmbedOptions;
